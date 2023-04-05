@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Masse">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="mtext1" layoutX="62.0" layoutY="214.0" onKeyReleased="#convertm1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="mtext2" layoutX="307.0" layoutY="214.0" onKeyReleased="#convertm2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="mcbo1" layoutX="67.0" layoutY="339.0" onAction="#convertm1" prefWidth="150.0" />
+                        <ComboBox fx:id="mcbo2" layoutX="307.0" layoutY="339.0" onAction="#convertm2" prefWidth="150.0" />
+                        <Button layoutX="143.0" layoutY="447.0" mnemonicParsing="false" onAction="#quitter" text="Sortir" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Volume">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="vtxt1" layoutX="67.0" layoutY="174.0" onKeyReleased="#convertv1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="vtxt2" layoutX="309.0" layoutY="174.0" onKeyReleased="#convertv2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="vcbo1" layoutX="67.0" layoutY="317.0" onAction="#convertv1" prefWidth="150.0" />
+                        <ComboBox fx:id="vcbo2" layoutX="303.0" layoutY="317.0" onAction="#convertv2" prefWidth="150.0" />
+                        <Button layoutX="115.0" layoutY="413.0" mnemonicParsing="false" onAction="#quitter" text="Sortir" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Longueur">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="ltxt1" layoutX="54.0" layoutY="153.0" onKeyReleased="#convertl1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="ltxt2" layoutX="357.0" layoutY="153.0" onKeyReleased="#convertl2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="lcbo1" layoutX="59.0" layoutY="284.0" onAction="#convertl1" prefWidth="150.0" />
+                        <ComboBox fx:id="lcbo2" layoutX="362.0" layoutY="284.0" onAction="#convertl2" prefWidth="150.0" />
+                        <Button layoutX="135.0" layoutY="400.0" mnemonicParsing="false" onAction="#quitter" text="Sortir" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
